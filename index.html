@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="assets/js/addRecipe.js" defer></script>
+    <script type="module" src="assets/js/addRecipe.js" defer></script>
     <script src="assets/js/nav.js" defer></script>
     <title>Mon assiette</title>
 </head>
 <body>
 
     <nav>
-        <button id="nav-form">Ajouter une recette</button>
-        <button id="nav-recipes">Toutes mes recettes</button>
-        <button id="nav-list">Ma liste de course</button>
+        <img id="logo" src="./assets/img/logo.png" alt="assiette">
+        <button id="nav-form">AJOUTER</button>
+        <button id="nav-recipes">RECETTES</button>
+        <button id="nav-list">LISTE</button>
     </nav>
 
     <main>
@@ -27,8 +28,8 @@
                 <h2>Ajouter une recette</h2>
                 <input class="recipe-name" type="text" placeholder="Nom">
                 <div class="item-container"></div>
-                    <button class="btn-add-item">Ajouter un ingrédient</button>
-                    <button class="btn-valid-form">Valider</button>
+                <button class="btn-add-item">Ajouter un ingrédient</button>
+                <button class="btn-valid-form">Valider</button>
                 </div>
         </section>
 

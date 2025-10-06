@@ -1,7 +1,32 @@
+@import './assets/css/nav.css';
+
+body {
+    margin: 0;
+    padding: 0 2vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
 section {
     display: none;
 }
 
 section.active {
     display: unset;
+}
+
+.item-container{
+    height: 20vh;
+}
+
+.item-container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
 }

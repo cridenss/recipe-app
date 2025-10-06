@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Pâtes",
+        "unit": "g",
+        "category": "Sec"
+    },
+    {
+        "id": 2,
+        "name": "Sauce Tomate",
+        "unit": "p",
+        "category": "Sec"
+    },
+    {
+        "id": 3,
+        "name": "Boeuf",
+        "unit": "g",
+        "category": "Viande"
+    },
+    {
+        "id": 4,
+        "name": "Oignon",
+        "unit": "p",
+        "category": "Légumes"
+    },
+    {
+        "id": 5,
+        "name": "Carotte",
+        "unit": "p",
+        "category": "Légumes"
+    }
+]
