@@ -12,6 +12,16 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
+li {
+    list-style: none;
+}
+
+main {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
 section {
     display: none;
 }
@@ -24,9 +34,24 @@ section.active {
     height: 20vh;
 }
 
-.item-container div {
+.item-container .item-wrapper {
     display: flex;
     align-items: center;
     gap: 10px;
     height: 30px;
+}
+
+.item-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.item-input-wrapper .dropdown {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    width: 100%;
 }
