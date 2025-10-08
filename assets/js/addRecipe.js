@@ -52,17 +52,20 @@ function matchInputName(inputEl) {
 }
 
 function generateDropdown(ulEl, inputValue) {
-  ulEl.innerHTML = ""
+  ulEl.innerHTML = "";
 
   for (let i = 0; i < ingredients.length; i++) {
-    const itemName = ingredients[i].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    
-    if (itemName.startsWith(inputValue)) {
-          const li = document.createElement("li");
-          li.textContent = ingredients[i].name
-          li.addEventListener('click', handleDropdownClick(li, ulEl))
+    const itemName = ingredients[i].name
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
 
-          ulEl.appendChild(li)
+    if (itemName.startsWith(inputValue)) {
+      const li = document.createElement("li");
+      li.textContent = ingredients[i].name;
+      li.addEventListener("click", handleDropdownClick(li, ulEl));
+
+      ulEl.appendChild(li);
     }
   }
 }

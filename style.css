@@ -1,19 +1,17 @@
 @import './assets/css/nav.css';
+@import './assets/css/variables.css';
+@import './assets/css/form.css';
 
 body {
     margin: 0;
-    padding: 0 2vw;
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: var(--light-parchment-color);
 }
 
 h1, h2, h3, h4, h5 {
     margin: 0;
-}
-
-li {
-    list-style: none;
 }
 
 main {
@@ -30,8 +28,17 @@ section.active {
     display: unset;
 }
 
+.form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
 .item-container{
-    height: 20vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 .item-container .item-wrapper {
@@ -54,4 +61,17 @@ section.active {
     top: 100%;
     background-color: white;
     width: 100%;
+}
+
+.item-input-wrapper .dropdown .li:hover {
+    background-color: grey;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover {
+    background-color: grey;
+    cursor: pointer;
 }
